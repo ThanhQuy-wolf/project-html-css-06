@@ -35,7 +35,6 @@ a {
     font-size: 5.6rem;
     font-weight: 500;
     line-height: 1.17;
-    letter-spacing: -2.24px;
 }
 
 .desc {
@@ -50,7 +49,8 @@ a {
 
 .btn-text {
     font-weight: 700;
-    line-height: 1.667; /* 166.667% */
+    line-height: 1.667;
+    /* 166.667% */
     color: #FDFDFD;
 }
 
@@ -74,7 +74,7 @@ a {
 .header__img-cover {
     width: 46px;
     height: 46px;
-    border: 1px solid #DCD4FC ;
+    border: 1px solid #DCD4FC;
 }
 
 .header__contact--email {
@@ -125,7 +125,8 @@ a {
     margin-bottom: 2rem;
     font-size: 8rem;
     font-weight: 500;
-    line-height: 0.95; /* 95% */
+    line-height: 0.95;
+    /* 95% */
     letter-spacing: -3.2px;
 }
 
@@ -203,12 +204,14 @@ a {
 .services__card--title {
     font-size: 3.2rem;
     font-weight: 500;
-    line-height: 1.25; /* 125% */
+    line-height: 1.25;
+    /* 125% */
     letter-spacing: -1.28px;
 }
 
 .services__card--desc {
-    line-height: 1.667; /* 166.667% */
+    line-height: 1.667;
+    /* 166.667% */
     color: var(--bs-secondary-color);
 }
 
@@ -238,4 +241,95 @@ a {
 .services__card-icon--phone {
     margin-top: 15px;
     margin-right: 5px;
+}
+
+/* ================ Work ================ */
+.main__work {
+    background: var(--bs-border-violet);
+    padding: 86px 0;
+}
+
+.work__blog-bg {
+    top: -104px;
+    right: 26px;
+    scale: 1.3;
+    z-index: 1;
+    width: 430px;
+    height: 380px;
+    rotate: 270deg;
+}
+
+.work__title,
+.work__desc {
+    color: #fff;
+}
+
+.work__title {
+    width: 35%;
+}
+
+.work__desc {
+    width: 30%;
+    margin-left: 160px;
+    opacity: 0.7;
+}
+
+.word__blog {
+    margin-top: 70px;
+}
+
+.work__blog-item {
+    padding: 23px 0;
+    padding-left: 34px;
+    background: #fff;
+}
+
+.work__blog-item-left {
+    padding: 20px 0;
+    z-index: 0;
+}
+
+.work__blog-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    margin-bottom: 10px;
+}
+
+.work__blog-img {
+    width: 246px;
+    height: 187px;
+    flex-shrink: 0;
+    margin-left: auto;
+    margin-right: 23px;
+    z-index: 3;
+}
+
+.work__blog-desc {
+    font-size: 1.6rem;
+    line-height: 1.4375;
+    /* 143.75% */
+    margin-bottom: 20px;
+    color: var(--bs-secondary-color);
+}
+
+.work__blog-link {
+    font-weight: 700;
+    line-height: 1.6667;
+    color: var(--bs-body-color);
+}
+
+.work__blog-link:hover {
+    text-decoration: underline;
+}
+
+.work__btn {
+    display: block;
+    padding: 16px 34px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--bs-body-color);
+    background: #fff;
 }
