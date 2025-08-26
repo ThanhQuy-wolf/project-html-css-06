@@ -395,8 +395,62 @@ a {
     margin-top: 70px;
 }
 
+.about__video-item {
+    width: 100%;
+}
+
 .about__video-btn {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* ================ Comment ================ */
+.comment__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.comment__bq {
+    margin-top: 60px;
+}
+
+.blockquote__title {
+    margin-bottom: 36px;
+    max-width: 55%;
+    font-size: 2.4rem;
+    line-height: 1.667;
+    color: var(--bs-secondary-color);
+}
+
+.blockquote__author-avt--bg {
+    width: 40px;
+    height: 40px;
+    background: #F29764;
+}
+
+.blockquote__author-avt {
+    width: 45px;
+    height: 74px;
+    object-fit: cover;
+    transform: translate(4px, 5px);
+}
+
+.blockquote__author--sub-tile {
+    margin-bottom: 40px;
+    font-size: 1.6rem;
+    line-height: 1.8125;
+    color: var(--bs-secondary-color);
+}
+
+.comment__circle {
+    width: 16px;
+    height: 16px;
+    background: #CBC9D0;
+}
+
+.comment__circle:nth-of-type(3) {
+    border: 3px solid #fff;
+    outline: 1px solid var(--bs-border-violet);
+    background: var(--bs-border-violet);
 }
