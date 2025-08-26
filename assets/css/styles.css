@@ -551,3 +551,23 @@ a {
     transform: translateY(0);
     margin-top: 23px;
 }
+
+/* ================ Gallery ================ */
+.main__gallery {
+    margin-top: 160px;
+}
+
+.gallery__desc {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.gallery__email {
+    margin-bottom: 70px;
+    text-decoration: underline;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    color: var(--bs-border-violet);
+}
