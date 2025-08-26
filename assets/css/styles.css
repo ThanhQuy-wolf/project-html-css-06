@@ -454,3 +454,100 @@ a {
     outline: 1px solid var(--bs-border-violet);
     background: var(--bs-border-violet);
 }
+
+/* ================ FAQ ================ */
+.faq__ask {
+    margin-top: 20px;
+}
+
+.faq__ask-block {
+    padding-top: 60px;
+}
+
+.faq__ask-block::after {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--bs-body-color);
+}
+
+.faq__ask-block-left {
+    margin-left: 23px;
+}
+
+.faq__ask-title {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -1.28px;
+    transition: all 0.2s ease;
+}
+
+.faq__ask-desc {
+    margin-top: 23px;
+    line-height: 1.667;
+    color: var(--bs-secondary-color);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-20px);
+    transition: all 0.2s ease;
+}
+
+.faq__ask-icon--block {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #D0D1D2;
+    transition: all 0.2s ease;
+}
+
+.faq__ask-icon--minus {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faq__ask-icon--plus,
+.faq__ask-icon--minus {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease;
+}
+
+.faq__ask-icon--plus {
+    font-size: 3rem;
+}
+
+.faq__ask-block:has([type="checkbox"]:checked) .faq__ask-icon--block {
+    border-color: #DFD8FC;
+}
+
+.faq__ask-block:has([type="checkbox"]:checked) .bi,
+.faq__ask-block:has([type="checkbox"]:checked) .faq__ask-title {
+    color: var(--bs-border-violet);
+}
+
+.faq__ask-block:has([type="checkbox"]:checked) .faq__ask-icon--plus {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.faq__ask-block:has([type="checkbox"]:checked) .faq__ask-icon--minus {
+    visibility: visible;
+    opacity: 1;
+}
+
+.faq__ask-block:has([type="checkbox"]:checked)::after {
+    background: var(--bs-border-violet);
+}
+
+.faq__ask-block:has([type="checkbox"]:checked) .faq__ask-desc {
+    max-height: 200px;
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 23px;
+}
