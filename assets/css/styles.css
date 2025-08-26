@@ -571,3 +571,28 @@ a {
     letter-spacing: -1.28px;
     color: var(--bs-border-violet);
 }
+
+/* ================ CTA ================ */
+.cta__container {
+    padding: 68px 0 !important;
+    background: #FBFAFF;
+}
+
+.cta__bg {
+    top: 0;
+    left: 0;
+}
+
+.cta__content {
+    gap: 20px;
+}
+
+.btn-layout {
+    background: var(--bs-border-violet);
+}
+
+.btn-text {
+    padding: 16px 34px;
+}
+
+/* ================ Footer ================ */
