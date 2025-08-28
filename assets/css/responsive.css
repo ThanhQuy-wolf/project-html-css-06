@@ -1,0 +1,222 @@
+:root {
+    --bs-body-font-family: "DM Sans", sans-serif;
+    --bs-body-color: #080415;
+    --bs-body-color-rgb: #080415;
+    --bs-secondary-bg: #FBFAFF;
+    --bs-secondary-color: #51586A;
+    --bs-border-violet: #5D3BEE;
+}
+
+/* ===== RESPONSIVE CSS =====
+   Bootstrap Breakpoints:
+   - xs: <576px (Extra small devices)
+   - sm: ≥576px (Small devices) 
+   - md: ≥768px (Medium devices)
+   - lg: ≥992px (Large devices)
+   - xl: ≥1200px (Extra large devices)
+   - xxl: ≥1400px (Extra extra large devices)
+*/
+
+/* ===== DESKTOP (1200px - 1399.98px) ===== */
+@media (min-width: 1200px) {
+    .header__responsive {
+        display: none;
+    }
+}
+
+/* ===== TABLET AND MOBILE ===== */
+@media (max-width: 1199.98px) {
+    /* Prevent horizontal scroll */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    
+    /* Hide desktop header, show mobile header */
+    /* ================ Header ================ */
+    .header {
+        display: none;
+    }
+
+    .header__responsive {
+        display: flex;
+        padding: 20px;
+        background: var(--bs-secondary-bg);
+    }
+
+    .responsive__container::after {
+        position: absolute;
+        bottom: -16px;
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: #D6D3E2;
+    }
+
+    .header__nav-icon {
+        width: 46px;
+        height: 46px;
+        border: 1px solid #DCD4FC;
+        cursor: pointer;
+    }
+
+    .header__rp-icon {
+        display: inline-block;
+        text-align: center;
+        padding: 0 7px;
+        font-size: 3rem;
+        font-weight: 600;
+        color: var(--bs-border-violet);
+    }
+
+    .header__rp-bg {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 999;
+        width: min(70vw, 300px);
+        height: 100vh;
+        background: #fff;
+        transition: right 0.3s ease;
+        padding: 40px 30px;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+
+    .header__rp-bg.show {
+        right: 0;
+    }
+
+    .header__rp-bl {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 998;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .header__rp-bl.show {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav--link {
+        font-size: 1.2rem;
+        padding: 15px 0;
+        border-bottom: 1px solid #f0f0f0;
+        display: block;
+        color: var(--bs-body-color);
+        text-decoration: none;
+    }
+
+    .nav--link:hover {
+        color: var(--bs-border-violet);
+    }
+    
+    /* ================ Hero ================ */
+    .main__hero {
+        padding-top: 0;
+    }
+
+    .hero__content {
+        margin-top: 50px;
+    }
+    
+    .hero__images {
+        order: 2;
+    }
+
+    .about__info {
+        gap: 30px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        display: none;
+    }
+
+    .footer__under {
+        width: 100%;
+        display: block;
+    }
+
+    .footer__under-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer__line {
+        display: none;
+    }
+    
+    /* Section spacing */
+    [class^="main__"]:not(.main__hero) {
+        margin-top: 100px;
+    }
+}
+
+/* ===== TABLET ONLY ===== */
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    /* Header adjustments */
+    .header__responsive {
+        padding: 20px 40px;
+    }
+    
+    /* ================ Hero ================ */
+    .hero__container {
+        padding: 60px 40px;
+    }
+    
+    .hero--title {
+        width: 100% !important;
+    }
+    
+    /* Spacing adjustments */
+    [class^="main__"]:not(.main__hero) {
+        margin-top: 80px;
+    }
+}
+
+/* ===== MOBILE ONLY (<768px) ===== */
+@media (max-width: 767.98px) {
+    /* Prevent horizontal scroll on mobile */
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    
+    * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    
+    /* Container adjustments */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        max-width: 100%;
+    }
+    
+    /* Header responsive */
+    .header__responsive {
+        padding: 16px 20px;
+        max-width: 100%;
+    }
+    
+    .header__rp-bg {
+        width: min(80vw, 280px);
+    }
+
+
+    /* ================ Hero ================ */
+    .hero--title {
+        width: 50% !important;
+    }
+}

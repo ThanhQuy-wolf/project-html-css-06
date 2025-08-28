@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
-<body>
+<body class="position-relative">
     <!-- Header -->
     <header class="header">
         <div class="header__container d-flex align-items-center justify-content-between">
@@ -40,13 +41,37 @@
         </div>
     </header>
 
+    <header class="header__responsive">
+        <div class="responsive__container container-fluid d-flex align-items-center position-relative">
+            <img src="./assets/img/Memoji Boys 13-24.svg" alt="" class="header--emoji" />
+
+            <div class="header__img-cover rounded-circle d-inline-block ms-auto">
+                <img src="./assets/img/logo.svg" alt="Logo" class="header__contact--logo py-4 px-3" />
+            </div>
+
+            <div class="header__nav-icon rounded-circle d-inline-block ms-3">
+                <i class="bi bi-list header__rp-icon"></i>
+            </div>
+        </div>
+
+        <div class="header__rp-bg position-absolute d-none">
+            <nav class="header__navbar d-flex flex-column align-items-end ms-5 mt-5">
+                    <a href="#!" class="nav--link text-body-s">Projects</a>
+                    <a href="#!" class="nav--link">Journey</a>
+                    <a href="#!" class="nav--link">Service</a>
+                    <a href="#!" class="nav--link">Contact</a>
+            </nav>
+        </div>
+        <div class="header__rp-bl position-absolute d-none"></div>
+    </header>
+
     <!-- Main -->
     <main class="main">
         <!-- Hero -->
         <section class="main__hero overflow-hidden">
             <div class="hero__container container g-0">
-                <div class="row">
-                    <figure class="hero__images col-lg-6 figure">
+                <div class="row hero__row">
+                    <figure class="hero__images col-lg-6 position-relative">
                         <img src="./assets/img/hero-bg-1.svg" alt="" class="hero--bg card-img-overlay" />
                         <img src="./assets/img/hero-img.png" alt="Designer" class="hero--img object-fit-cover" />
                     </figure>
@@ -489,7 +514,7 @@
                             </label>
                         </div>
                     </div>
-            </div>
+                </div>
         </section>
 
         <!-- Gallery -->
@@ -497,22 +522,26 @@
             <div class="container">
                 <article class="gallery__content d-flex align-items-center flex-column">
                     <h2 class="galery__title title text-center">My atmosphere</h2>
-                    <p class="gallery__desc desc text-center w-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                    <p class="gallery__desc desc text-center w-50">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. In urna, non nisl tincidunt ut elementum turpis.</p>
                     <a href="#!" class="gallery__email text-center">@interaction_arif</a>
                 </article>
 
                 <figure class="gallery__images">
                     <div class="row row-cols-lg-3 row-cols-1 gx-5">
                         <div class="col-lg-4 col-12">
-                            <img src="./assets/img/gallery-img-1.png" alt="" class="gallery__images-item w-100 h-100 object-fit-cover">
+                            <img src="./assets/img/gallery-img-1.png" alt=""
+                                class="gallery__images-item w-100 h-100 object-fit-cover">
                         </div>
 
                         <div class="col-lg-4 col-12">
-                            <img src="./assets/img/gallery-img-2.png" alt="" class="gallery__images-item w-100 h-100 object-fit-cover">
+                            <img src="./assets/img/gallery-img-2.png" alt=""
+                                class="gallery__images-item w-100 h-100 object-fit-cover">
                         </div>
-                        
+
                         <div class="col-lg-4 col-12">
-                            <img src="./assets/img/gallery-img-3.png" alt="" class="gallery__images-item w-100 h-100 object-fit-cover">
+                            <img src="./assets/img/gallery-img-3.png" alt=""
+                                class="gallery__images-item w-100 h-100 object-fit-cover">
                         </div>
                     </div>
                 </figure>
@@ -527,7 +556,8 @@
                 <article class="cta__content d-flex align-items-center flex-column">
                     <img src="./assets/img/icon-happy.svg" alt="" class="cta__icon">
                     <h2 class="cta__title title text-center">Got a project? Let's talk</h2>
-                    <p class="cta__desc desc text-center w-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                    <p class="cta__desc desc text-center w-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        In urna, non nisl tincidunt ut elementum turpis.</p>
                     <a href="#!" class="cta__btn btn-text btn-layout">Book a Call</a>
                 </article>
             </div>
@@ -535,6 +565,34 @@
     </main>
 
     <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container d-flex align-items-center justify-content-between">
+                <div class="footer__contact">
+                    <div class="footer__img-cover rounded-circle d-inline-block">
+                        <img src="./assets/img/logo.svg" alt="Logo" class="footer__contact--logo py-4 px-3" />
+                    </div>
+                    <a href="mailto:hi@arif.interactive"
+                        class="footer__contact--email ms-3 text-decoration-underline">hi@arif.interactive</a>
+                </div>
+                <img src="./assets/img/Memoji Boys 13-24.svg" alt="" class="footer--emoji" />
+                <nav class="footer__navbar navbar">
+                    <a href="#!" class="nav--link text-body-s">Projects</a>
+                    <a href="#!" class="nav--link">Journey</a>
+                    <a href="#!" class="nav--link">Service</a>
+                    <a href="#!" class="nav--link">Contact</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="footer__under d-flex flex-column align-items-center">
+            <div class="footer__line w-75"></div>
+            <div class="footer__under-content d-flex justify-content-between w-75">
+                <p class="footer__under-text desc">©interactiveArif 2021. All rights reserved.</p>
+                <p class="footer__under-text desc">Privacy Policy | Terms of Conditions</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
